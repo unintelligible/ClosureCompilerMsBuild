@@ -1,0 +1,8 @@
+1. Download the latest version of the closure compiler: http://code.google.com/closure/compiler/
+2. Download the latest version of IKVM: http://www.ikvm.net/\
+3. Run the following command line:
+	ikvmc -target:(exe|library) -r:.\json.dll .\compiler.jar
+
+The resulting compiler.exe can then be run with the same command-line arguments as the java closure compiler:
+	.\compiler.exe --js my-js-file.js > my-js-file.min.js
+
